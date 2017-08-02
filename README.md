@@ -1,5 +1,7 @@
 ﻿# BottomNavigationView
 
+[![](https://jitpack.io/v/kaixinhupo/BottomNavigationView.svg)](https://jitpack.io/#kaixinhupo/BottomNavigationView)
+
 ### 导入
 #### Step 1. 添加JitPack到项目的build.gradle
 
