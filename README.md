@@ -1,10 +1,24 @@
 ﻿# BottomNavigationView
 
----
-
 ### 导入
+#### Step 1. 添加JitPack到项目的build.gradle
 
+```groovy
+    allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
 
+#### Step 2.添加依赖
+
+```groovy
+	dependencies {
+	        compile 'com.github.kaixinhupo:BottomNavigationView:1.0'
+	}
+```
 ### 使用
 
 1.布局文件
@@ -83,5 +97,13 @@ public class IndexActivity extends Activity implements BottomNavigationView.OnTa
 }
 ```
 
+### 3.个性化
+如果要修改BottomNavigationView文字的颜色,请在你项目中的colors.xml定义两个颜色：**bnv_text_normal**，**bnv_text_selected**，并设置成你期望的色值就可以了。
 
+```xml
+    <!--选中时文字的颜色-->
+    <color name="bnv_text_selected" >#E54539</color>
+    <!--未选中时文字的颜色-->
+    <color name="bnv_text_normal" >#4A4A4A</color>
+```
 
